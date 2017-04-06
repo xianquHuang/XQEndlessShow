@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07801374D3ED6E44C20D61F5 /* libPods-XQEndlessShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DB99EEE68581C95BC1A1C8 /* libPods-XQEndlessShow.a */; };
+		A0078EC81E95C73B00308CAD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0078EC71E95C73B00308CAD /* Localizable.strings */; };
 		A00AD1F21E8E159D008B3266 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A00AD1F11E8E159D008B3266 /* main.m */; };
 		A00AD1F51E8E159D008B3266 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A00AD1F41E8E159D008B3266 /* AppDelegate.m */; };
 		A00AD1F81E8E159D008B3266 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00AD1F71E8E159D008B3266 /* ViewController.m */; };
@@ -16,6 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A56B3A3A534565832EA72A3 /* Pods-XQEndlessShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XQEndlessShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XQEndlessShow/Pods-XQEndlessShow.debug.xcconfig"; sourceTree = "<group>"; };
+		37DB99EEE68581C95BC1A1C8 /* libPods-XQEndlessShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XQEndlessShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CCD14C86B3CC8CDE4544EB /* Pods-XQEndlessShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XQEndlessShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-XQEndlessShow/Pods-XQEndlessShow.release.xcconfig"; sourceTree = "<group>"; };
+		A004DC321E94ED6D0071AD54 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A0078EC71E95C73B00308CAD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A00AD1ED1E8E159D008B3266 /* XQEndlessShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XQEndlessShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00AD1F11E8E159D008B3266 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A00AD1F31E8E159D008B3266 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +40,198 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07801374D3ED6E44C20D61F5 /* libPods-XQEndlessShow.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43F57B429C6493650A8702D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37DB99EEE68581C95BC1A1C8 /* libPods-XQEndlessShow.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0078ECB1E96094B00308CAD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A00AD1F31E8E159D008B3266 /* AppDelegate.h */,
+				A00AD1F41E8E159D008B3266 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A0078ECD1E96096500308CAD /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				A0078ED21E960B6400308CAD /* Sections */,
+				A0078ECE1E9609BB00308CAD /* General */,
+				A0078ECF1E9609D100308CAD /* Helpers */,
+				A0078ED01E960A0A00308CAD /* Macro */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		A0078ECE1E9609BB00308CAD /* General */ = {
+			isa = PBXGroup;
+			children = (
+				A0078EDB1E960C7200308CAD /* Base */,
+				A0078EDA1E960C5100308CAD /* Categories */,
+				A0078ED91E960C4900308CAD /* DB */,
+				A0078ED81E960C4200308CAD /* Views */,
+				A0078ED71E960C3100308CAD /* Widgets */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		A0078ECF1E9609D100308CAD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A0078EDC1E960C8300308CAD /* NetWork */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		A0078ED01E960A0A00308CAD /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Macro;
+			sourceTree = "<group>";
+		};
+		A0078ED11E960B1A00308CAD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A0078ED61E960BA700308CAD /* Fonts */,
+				A0078ED51E960B9E00308CAD /* Images */,
+				A0078ED41E960B9500308CAD /* Sound */,
+				A0078ED31E960B8200308CAD /* Videos */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		A0078ED21E960B6400308CAD /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				A0078EDD1E960CA700308CAD /* Home */,
+			);
+			name = Sections;
+			sourceTree = "<group>";
+		};
+		A0078ED31E960B8200308CAD /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
+		A0078ED41E960B9500308CAD /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		A0078ED51E960B9E00308CAD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A0078ED61E960BA700308CAD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		A0078ED71E960C3100308CAD /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Widgets;
+			sourceTree = "<group>";
+		};
+		A0078ED81E960C4200308CAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A0078ED91E960C4900308CAD /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		A0078EDA1E960C5100308CAD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		A0078EDB1E960C7200308CAD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		A0078EDC1E960C8300308CAD /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NetWork;
+			sourceTree = "<group>";
+		};
+		A0078EDD1E960CA700308CAD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A0078EE01E960D1400308CAD /* Views */,
+				A0078EDF1E960D0900308CAD /* Model */,
+				A0078EDE1E960CF300308CAD /* ViewControllers */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		A0078EDE1E960CF300308CAD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A00AD1F61E8E159D008B3266 /* ViewController.h */,
+				A00AD1F71E8E159D008B3266 /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A0078EDF1E960D0900308CAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A0078EE01E960D1400308CAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		A00AD1E41E8E159D008B3266 = {
 			isa = PBXGroup;
 			children = (
+				A047863C1E8E4EF000B30611 /* Frameworks */,
 				A00AD1EF1E8E159D008B3266 /* XQEndlessShow */,
 				A00AD1EE1E8E159D008B3266 /* Products */,
+				E437F3B31879052F766D17D2 /* Pods */,
+				43F57B429C6493650A8702D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +246,15 @@
 		A00AD1EF1E8E159D008B3266 /* XQEndlessShow */ = {
 			isa = PBXGroup;
 			children = (
-				A00AD1F31E8E159D008B3266 /* AppDelegate.h */,
-				A00AD1F41E8E159D008B3266 /* AppDelegate.m */,
-				A00AD1F61E8E159D008B3266 /* ViewController.h */,
-				A00AD1F71E8E159D008B3266 /* ViewController.m */,
+				A0078ECB1E96094B00308CAD /* AppDelegate */,
+				A0078ECD1E96096500308CAD /* Class */,
+				A0078ED11E960B1A00308CAD /* Resource */,
 				A00AD1F91E8E159D008B3266 /* Main.storyboard */,
 				A00AD1FC1E8E159D008B3266 /* Assets.xcassets */,
 				A00AD1FE1E8E159D008B3266 /* LaunchScreen.storyboard */,
 				A00AD2011E8E159D008B3266 /* Info.plist */,
+				A004DC321E94ED6D0071AD54 /* PrefixHeader.pch */,
+				A0078EC71E95C73B00308CAD /* Localizable.strings */,
 				A00AD1F01E8E159D008B3266 /* Supporting Files */,
 			);
 			path = XQEndlessShow;
@@ -79,6 +268,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A047863C1E8E4EF000B30611 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E437F3B31879052F766D17D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A56B3A3A534565832EA72A3 /* Pods-XQEndlessShow.debug.xcconfig */,
+				69CCD14C86B3CC8CDE4544EB /* Pods-XQEndlessShow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +291,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A00AD2041E8E159D008B3266 /* Build configuration list for PBXNativeTarget "XQEndlessShow" */;
 			buildPhases = (
+				DC52759F9A4E88F994936634 /* [CP] Check Pods Manifest.lock */,
 				A00AD1E91E8E159D008B3266 /* Sources */,
 				A00AD1EA1E8E159D008B3266 /* Frameworks */,
 				A00AD1EB1E8E159D008B3266 /* Resources */,
+				498445500081F33ACDE9DA90 /* [CP] Embed Pods Frameworks */,
+				902C6EDD7F81D86EE18FEE45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,12 +347,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				A00AD2001E8E159D008B3266 /* LaunchScreen.storyboard in Resources */,
+				A0078EC81E95C73B00308CAD /* Localizable.strings in Resources */,
 				A00AD1FD1E8E159D008B3266 /* Assets.xcassets in Resources */,
 				A00AD1FB1E8E159D008B3266 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		498445500081F33ACDE9DA90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XQEndlessShow/Pods-XQEndlessShow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		902C6EDD7F81D86EE18FEE45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XQEndlessShow/Pods-XQEndlessShow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC52759F9A4E88F994936634 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A00AD1E91E8E159D008B3266 /* Sources */ = {
@@ -183,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -230,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -269,9 +528,11 @@
 		};
 		A00AD2051E8E159D008B3266 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A56B3A3A534565832EA72A3 /* Pods-XQEndlessShow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TAT3CFQ8PK;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XQEndlessShow/PrefixHeader.pch";
 				INFOPLIST_FILE = XQEndlessShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hxq.XQEndlessShow;
@@ -281,9 +542,11 @@
 		};
 		A00AD2061E8E159D008B3266 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69CCD14C86B3CC8CDE4544EB /* Pods-XQEndlessShow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TAT3CFQ8PK;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XQEndlessShow/PrefixHeader.pch";
 				INFOPLIST_FILE = XQEndlessShow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hxq.XQEndlessShow;
@@ -310,6 +573,7 @@
 				A00AD2061E8E159D008B3266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
