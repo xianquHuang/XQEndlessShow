@@ -15,6 +15,8 @@
 		A00AD1FB1E8E159D008B3266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00AD1F91E8E159D008B3266 /* Main.storyboard */; };
 		A00AD1FD1E8E159D008B3266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00AD1FC1E8E159D008B3266 /* Assets.xcassets */; };
 		A00AD2001E8E159D008B3266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00AD1FE1E8E159D008B3266 /* LaunchScreen.storyboard */; };
+		A01CF9DC1EEF80C000880F52 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A01CF9DB1EEF80C000880F52 /* UserManager.m */; };
+		A04926341EEF77270053156B /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A04926331EEF77270053156B /* AppManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,11 @@
 		A00AD1FC1E8E159D008B3266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A00AD1FF1E8E159D008B3266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A00AD2011E8E159D008B3266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A01CF9DA1EEF80C000880F52 /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		A01CF9DB1EEF80C000880F52 /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
+		A01CF9DF1EEF849E00880F52 /* FontAndColorMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAndColorMacros.h; sourceTree = "<group>"; };
+		A04926321EEF77270053156B /* AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
+		A04926331EEF77270053156B /* AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,42 +71,13 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
-		A0078ECD1E96096500308CAD /* Class */ = {
+		A0078ECD1E96096500308CAD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A0078ED21E960B6400308CAD /* Sections */,
-				A0078ECE1E9609BB00308CAD /* General */,
-				A0078ECF1E9609D100308CAD /* Helpers */,
-				A0078ED01E960A0A00308CAD /* Macro */,
+				A0078EDD1E960CA700308CAD /* Home */,
+				A0078ED21E960B6400308CAD /* Mine */,
 			);
-			name = Class;
-			sourceTree = "<group>";
-		};
-		A0078ECE1E9609BB00308CAD /* General */ = {
-			isa = PBXGroup;
-			children = (
-				A0078EDB1E960C7200308CAD /* Base */,
-				A0078EDA1E960C5100308CAD /* Categories */,
-				A0078ED91E960C4900308CAD /* DB */,
-				A0078ED81E960C4200308CAD /* Views */,
-				A0078ED71E960C3100308CAD /* Widgets */,
-			);
-			name = General;
-			sourceTree = "<group>";
-		};
-		A0078ECF1E9609D100308CAD /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				A0078EDC1E960C8300308CAD /* NetWork */,
-			);
-			name = Helpers;
-			sourceTree = "<group>";
-		};
-		A0078ED01E960A0A00308CAD /* Macro */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Macro;
+			name = Modules;
 			sourceTree = "<group>";
 		};
 		A0078ED11E960B1A00308CAD /* Resource */ = {
@@ -113,12 +91,11 @@
 			name = Resource;
 			sourceTree = "<group>";
 		};
-		A0078ED21E960B6400308CAD /* Sections */ = {
+		A0078ED21E960B6400308CAD /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				A0078EDD1E960CA700308CAD /* Home */,
 			);
-			name = Sections;
+			name = Mine;
 			sourceTree = "<group>";
 		};
 		A0078ED31E960B8200308CAD /* Videos */ = {
@@ -147,48 +124,6 @@
 			children = (
 			);
 			name = Fonts;
-			sourceTree = "<group>";
-		};
-		A0078ED71E960C3100308CAD /* Widgets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Widgets;
-			sourceTree = "<group>";
-		};
-		A0078ED81E960C4200308CAD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		A0078ED91E960C4900308CAD /* DB */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = DB;
-			sourceTree = "<group>";
-		};
-		A0078EDA1E960C5100308CAD /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
-		A0078EDB1E960C7200308CAD /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		A0078EDC1E960C8300308CAD /* NetWork */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = NetWork;
 			sourceTree = "<group>";
 		};
 		A0078EDD1E960CA700308CAD /* Home */ = {
@@ -247,7 +182,12 @@
 			isa = PBXGroup;
 			children = (
 				A0078ECB1E96094B00308CAD /* AppDelegate */,
-				A0078ECD1E96096500308CAD /* Class */,
+				A0078ECD1E96096500308CAD /* Modules */,
+				A049262D1EEF76610053156B /* Manager */,
+				A049262E1EEF76760053156B /* Utils */,
+				A049262F1EEF76870053156B /* Base */,
+				A04926301EEF76980053156B /* ThirdParty */,
+				A04926311EEF76B10053156B /* Define */,
 				A0078ED11E960B1A00308CAD /* Resource */,
 				A00AD1F91E8E159D008B3266 /* Main.storyboard */,
 				A00AD1FC1E8E159D008B3266 /* Assets.xcassets */,
@@ -268,11 +208,75 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A01CF9DD1EEF80DB00880F52 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NetWork;
+			sourceTree = "<group>";
+		};
+		A01CF9DE1EEF810700880F52 /* WebViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = WebViewController;
+			sourceTree = "<group>";
+		};
 		A047863C1E8E4EF000B30611 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A049262D1EEF76610053156B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A04926321EEF77270053156B /* AppManager.h */,
+				A04926331EEF77270053156B /* AppManager.m */,
+				A04926351EEF77490053156B /* UserManager */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		A049262E1EEF76760053156B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A01CF9DD1EEF80DB00880F52 /* NetWork */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		A049262F1EEF76870053156B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A01CF9DE1EEF810700880F52 /* WebViewController */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		A04926301EEF76980053156B /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		A04926311EEF76B10053156B /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				A01CF9DF1EEF849E00880F52 /* FontAndColorMacros.h */,
+			);
+			name = Define;
+			sourceTree = "<group>";
+		};
+		A04926351EEF77490053156B /* UserManager */ = {
+			isa = PBXGroup;
+			children = (
+				A01CF9DA1EEF80C000880F52 /* UserManager.h */,
+				A01CF9DB1EEF80C000880F52 /* UserManager.m */,
+			);
+			name = UserManager;
 			sourceTree = "<group>";
 		};
 		E437F3B31879052F766D17D2 /* Pods */ = {
@@ -410,7 +414,9 @@
 			files = (
 				A00AD1F81E8E159D008B3266 /* ViewController.m in Sources */,
 				A00AD1F51E8E159D008B3266 /* AppDelegate.m in Sources */,
+				A01CF9DC1EEF80C000880F52 /* UserManager.m in Sources */,
 				A00AD1F21E8E159D008B3266 /* main.m in Sources */,
+				A04926341EEF77270053156B /* AppManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

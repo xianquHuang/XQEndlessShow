@@ -50,7 +50,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
-    cell.textLabel.text = NSLocalizedString(@"hczd full name", nil);
+    cell.textLabel.text = NSLocalizedString(@"Fujian HCZD automobile management service co., LTD", nil);
     
     return cell;
 }

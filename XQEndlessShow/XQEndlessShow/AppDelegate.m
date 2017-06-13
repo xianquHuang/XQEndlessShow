@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UINavigationController * nav = [[UINavigationController alloc]initWithNibName:@"Navigation Controller" bundle:[NSBundle mainBundle]];
+//    ViewController * vc = [[ViewController alloc]init];
+//    [nav addChildViewController:vc];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
     [self ListenNetStatusChange];
     return YES;
 }
@@ -36,9 +41,9 @@
                 
             case AFNetworkReachabilityStatusNotReachable: {// 没有网络(断网)
                 NSLog(@"没有网络(断网)");
-                UIAlertController * NotReachView = [UIAlertController alertControllerWithTitle:@"提示" message:NSLocalizedString(@"NotReachableToNet", nil) preferredStyle:UIAlertControllerStyleAlert];
-                UIAlertAction * cancleAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-                UIAlertAction * OpenNetAction = [UIAlertAction actionWithTitle:@"去开启" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                UIAlertController * NotReachView = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Remind",nil) message:NSLocalizedString(@"Network link is unusual, please open the mobile network to access the data", nil) preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction * cancleAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel",nil) style:UIAlertActionStyleCancel handler:nil];
+                UIAlertAction * OpenNetAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Go Open",nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
                     //iOS10.0之后
                     //                    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString] options:@{} completionHandler:nil];
@@ -46,6 +51,8 @@
                 
                 [NotReachView addAction:cancleAction];
                 [NotReachView addAction:OpenNetAction];
+                
+                [self.window.rootViewController presentViewController:NotReachView animated:YES completion:nil];
             }
                 
                 break;
